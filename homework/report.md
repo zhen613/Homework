@@ -16,6 +16,7 @@ A(m, n) = A(m-1, A(m, n-1)), 當 m > 0 且 n > 0 時，遞迴拆解為更小的�
 主函數接收用戶輸入的 m 和 n。
 呼叫遞迴函數 A(m, n)，計算結果並輸出。
 # 程式實作
+
 此為遞迴:
 ```
 #include iostream
@@ -38,6 +39,7 @@ int main() {
 }//遞迴
 ```
 <img width="489" height="167" alt="螢幕擷取畫面 2025-07-24 154032" src="https://github.com/user-attachments/assets/78157195-7195-4a20-801b-ecb484694f99" />
+
 此為非遞迴
 ```
 #include iostream
