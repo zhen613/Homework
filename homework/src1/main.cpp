@@ -17,6 +17,7 @@ int main() {
     cout << "Ackerman(2, 3) = " << result << endl;
     return 0;
 }
+---------------------------------------------------------
 //非遞迴
 #include iostream
 using namespace std;
