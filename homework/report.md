@@ -113,3 +113,57 @@ int main() {
 遞迴情況（n = 2 或 n = 3）：先輸出 n-1 層的幂集結果，然後通過 powerset(a, b, c, n-1) 遞迴處理剩餘元素。每次遞迴會生成當前層級的所有子集，並逐步擴展。<br>
 # 解題範例
 S={'a', 'b', 'c'}，其所有子集合（幂集）為：{}, {a}, {b}, {c}, {a, b}, {a, c}, {b, c}, {a, b, c}。<br>
+# 程式實作
+```
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<vector<int>> powerset(vector<int>& s, int index) {
+    if (index < 0) {
+        vector<vector<int>> result = {{}};
+        return result;
+    }
+
+    int x = s[index];
+    vector<vector<int>> subsets = powerset(s, index - 1);
+    vector<vector<int>> newSubsets = subsets;
+
+    for (vector<int>& subset : subsets) {
+        subset.push_back(x);
+        newSubsets.push_back(subset);
+    }
+
+    return newSubsets;
+}
+
+int main() {
+    vector<int> s = {1, 2, 3};
+    vector<vector<int>> result = powerset(s, s.size() - 1);
+    for (vector<int>& subset : result) {
+        cout << "{";
+        for (int i = 0; i < subset.size(); i++) {
+            cout << subset[i];
+            if (i < subset.size() - 1) cout << ", ";
+        }
+        cout << "}" << endl;
+    }
+    return 0;
+}
+```
+# 效能分析
+*    時間複雜度:$O(2^n)$。每層子集數量從 1 增長到 $2^n$。每個子集的複製和添加操作是線性時間。
+*    空間複雜度:$O(2^n \cdot n)$。最終返回的幂集包含 $2^n$ 個子集，每個子集平均包含約 $n/2$ 個元素（考慮所有組合的平均值）。因此，總儲存空間為 $O(2^n \cdot n)$。
+# 測試與驗證
+<img width="358" height="247" alt="螢幕擷取畫面 2025-07-24 181838" src="https://github.com/user-attachments/assets/f85cba8a-4bdc-417a-b7b6-88e46218d8b3" /><br>
+# 結論
+該程式碼實現了通過遞迴生成集合幂集的功能，時間複雜度為 $O(2^n)$，空間複雜度為 $O(2^n \cdot n)$，其中 $n$ 為集合元素數量，適合用於理解幂集概念，但對於大規模資料可能因指數級複雜度而效率低下。
+# 申論及開發報告
+
+
+
+
+
+
+
