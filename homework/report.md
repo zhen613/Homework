@@ -18,7 +18,7 @@ A(m, n) = A(m-1, A(m, n-1)), 當 m > 0 且 n > 0 時，遞迴拆解為更小的�
 # 程式實作
 
 此為遞迴:
-```
+```cpp
 #include iostream
 using namespace std;
 int Ackerman(int m, int n) {
@@ -114,7 +114,7 @@ int main() {
 # 解題範例
 S={'a', 'b', 'c'}，其所有子集合（幂集）為：{}, {a}, {b}, {c}, {a, b}, {a, c}, {b, c}, {a, b, c}。<br>
 # 程式實作
-```
+```cpp
 #include <iostream>
 #include <vector>
 
