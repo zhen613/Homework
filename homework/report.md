@@ -41,7 +41,7 @@ int main() {
 <img width="489" height="167" alt="螢幕擷取畫面 2025-07-24 154032" src="https://github.com/user-attachments/assets/78157195-7195-4a20-801b-ecb484694f99" /><br>
 
 此為非遞迴:
-``` cpp
+```cpp
 #include iostream
 using namespace std;
 
