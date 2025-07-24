@@ -80,8 +80,8 @@ int main() {
 <img width="586" height="206" alt="image" src="https://github.com/user-attachments/assets/d836e15a-6856-47a4-a46f-826628a9c9ee" />
 
 # 效能分析
-空間複雜度:隨著 M,N 增加越來越大<br>
-時間複雜度:隨著 M,N 增加越來越大<br>
+空間複雜度:隨著 M,N 增加越來越大。<br>
+時間複雜度:隨著 M,N 增加越來越大。<br>
 
 # 測試與驗證
 | 測試案例 | 輸入參數 $m$  | 輸入參數 $n$ | 預期輸出 | 實際輸出 |
@@ -157,6 +157,7 @@ int main() {
 *    空間複雜度:$O(2^n \cdot n)$。最終返回的幂集包含 $2^n$ 個子集，每個子集平均包含約 $n/2$ 個元素（考慮所有組合的平均值）。因此，總儲存空間為 $O(2^n \cdot n)$。
 # 測試與驗證
 測試輸出<br>
+<br>
 <img width="358" height="247" alt="螢幕擷取畫面 2025-07-24 181838" src="https://github.com/user-attachments/assets/f85cba8a-4bdc-417a-b7b6-88e46218d8b3" /><br>
 # 結論
 該程式碼實現了通過遞迴生成集合幂集的功能，時間複雜度為 $O(2^n)$，空間複雜度為 $O(2^n \cdot n)$，其中 $n$ 為集合元素數量，適合用於理解幂集概念，但對於大規模資料可能因指數級複雜度而效率低下。
