@@ -7,7 +7,7 @@ polynomial 類別,此外在加入 linked list 功能實作簡單的連結
 ## 解題策略
 *    鏈結串列實現：
 linked_list 類別實現了一個單向鏈結串列，透過 node<E> 儲存泛型資料 E。<br>
-iterator 類別提供遍歷功能，支援 begin() 和 end() 方法。<br>
+iterator 類別提供遍歷功能，支援 begin( ) 和 end( ) 方法。<br>
 available_list 類別管理一個可重複使用的節點池，以優化記憶體分配和釋放。<br>
 *    多項式類別 (Polynomial)：
 多項式以 Term 物件陣列表示，每個 Term 包含係數 (coef) 和指數 (exp)。<br>
