@@ -568,18 +568,11 @@ int main() {
 | 8. 求值 A(x) * B(x) | x = 1                | 2            | 2             | 通過      | 2x^2 在 x=1 為 2   |
 | 9. 求值 A(x) / B(x) | x = 1                | 2            | 2             | 通過      | 2 在 x=1 為 2      |
 ## 申論及開發報告
-*    鏈結串列管理 (linked_list)：使用自訂節點 (node) 和迭代器 (iterator)，支援動態數據結構操作（如添加、移除、反轉等）。
-記憶體池管理 (available_list)：提供節點的分配與釋放，優化記憶體使用。
-多項式運算 (Polynomial)：支援多項式的加、減、乘、除操作，以及在指定 x 值下的求值。
-輸入輸出處理：透過 operator>> 解析多項式表達式，operator<< 格式化輸出。
+*    鏈結串列管理 (linked_list)：使用自訂節點 (node) 和迭代器 (iterator)，支援動態數據結構操作（如添加、移除、反轉等）。<br>
+記憶體池管理 (available_list)：提供節點的分配與釋放，優化記憶體使用。<br>
+多項式運算 (Polynomial)：支援多項式的加、減、乘、除操作，以及在指定 x 值下的求值。<br>
+輸入輸出處理：透過 operator>> 解析多項式表達式，operator<< 格式化輸出。<br>
 *    結構設計
-鏈結串列：
-採用單向鏈結串列結構，支援泛型 (template<typename E>)。
-提供 append、remove、reverse 等操作，時間複雜度為 O(n)。
-迭代器實現支援標準遍歷介面 (begin()、end())，時間複雜度為 O(1)。
-記憶體池：
-available_list 管理可重用節點，旨在減少動態分配開銷。
-當前實現存在邏輯錯誤（例如 current->next == nullptr 應為 current->next = nullptr），需修正。
-多項式類：
-使用 Term 陣列儲存係數和指數，支援動態分配。
-運算函數 (Add、Sub、Mult、Div) 實現基本多項式運算，時間複雜度分別為 O(max(m, n))、O(max(m, n))、O(m * n)、O(m * n)。
+採用單向鏈結串列結構，支援泛型 (template<typename E>)。<br>
+提供 append、remove、reverse 等操作，時間複雜度為 O(n)。<br>
+迭代器實現支援標準遍歷介面 (begin()、end())，時間複雜度為 O(1)。<br>
