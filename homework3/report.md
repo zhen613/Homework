@@ -544,6 +544,8 @@ int main() {
 }
 
 ```
+<img width="549" height="240" alt="螢幕擷取畫面 2025-08-01 144025" src="https://github.com/user-attachments/assets/f0aa5156-5d7b-4d2a-a3f0-fa64874a711e" /><br>
+
 ## 效能分析
 *    時間複雜度
 鏈結串列操作：O(n)（append, reverse, remove, size, at），O(1)（begin, end）。<br>
