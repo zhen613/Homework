@@ -13,7 +13,6 @@ polynomial 類別,此外在加入 linked list 功能實作簡單的連結
 #include <math.h>
 #include <sys/time.h>
 
-// forward declarations
 template<typename E>
 class linked_list;
 
